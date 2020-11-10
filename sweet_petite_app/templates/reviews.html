@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews of Sweet Petite</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'reviews.css' %}">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+        <h1>Welcome to Sweet Petite Designs</h1>
+        </div>
+        <div id="nav">
+    <h2><a href="/">Home</a></h2>
+    <h2><a href="menu.html">Menu</a></h2>
+    <h2><a href="">Reviews</a></h2>
+    <h2><a href="photos.html">Photo Gallery</a></h2>
+    <h2><a href="contact.html">Contact</a></h2>
+    <h2><a href="order.html">Order</a></h2>
+        </div>
+        <div id="top_left">
+            <h3>Reviews of Sweet Petite Designs</h3>
+            {% for review in reviews %}
+            "{{review.review}}"</br>
+            - {{review.name}}
+            {% endfor %}
+        </div>
+        <div id="review_form">
+            <form action="/add_review" method="post">
+                {% csrf_token %}
+                Name: <input type="text" name="name" class="center"></br></br>
+                Please Leave a Review</br>
+                 <textarea name="review" cols="50" rows="10"></textarea></br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
