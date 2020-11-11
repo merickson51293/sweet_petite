@@ -23,8 +23,8 @@
         <div id="top_left">
             <h3>Reviews of Sweet Petite Designs</h3>
             {% for review in reviews %}
-            "{{review.review}}"</br>
-            - {{review.name}}
+            <p>"{{review.review}}"</p>
+        <p>- {{review.name}}</p>
             {% endfor %}
         </div>
         <div id="review_form">
