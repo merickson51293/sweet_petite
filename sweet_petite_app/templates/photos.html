@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/photos.css' %}">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <a href=""><img id="logo" src="{% static 'imgs/logo.png' %}" alt="SPD Logo"></a>
+        </div>
+        <div id="nav">
+    <a href="/"><h2>Home</h2></a>
+    <a href="/menu"><h2>Menu</h2></a>
+    <a href="/reviews"><h2>Reviews</h2></a>
+    <a href="/photos"><h2>Photo Gallery</h2></a>
+    <a href="/contact"><h2>Contact</h2></a>
+    <a href="/order"><h2>Order</h2></a>
+        </div>
+    <div id="celebration">
+        <a href="/celebrations"><h1>Celebrations</h1>
+        <img id="link" src="{% static 'imgs/chef_bday.jpeg' %}" alt="Chef Birthday"></a>
+    </div>
+    <div id="grad">
+        <a href="/graduation"><h1>Graduation</h1>
+        <img id="link" src="{% static 'imgs/2020_grad.jpeg' %}" alt="Chef Birthday"></a>
+    </div>  
+    <div id="misc">
+        <a href="/misc"><h1>Misc.</h1>
+        <img id="link" src="{% static 'imgs/fall.jpeg' %}" alt="Chef Birthday"></a>
+    </div>
+    </div>
+</body>
+</html>

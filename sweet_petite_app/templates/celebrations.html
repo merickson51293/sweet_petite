@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celebration Pictures</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/photos.css'%}">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <a href=""><img id="logo" src="{% static 'imgs/logo.png' %}" alt="SPD Logo"></a>
+        </div>
+        <div id="nav">
+    <a href=""><h2>Home</h2></a>
+    <a href="/menu"><h2>Menu</h2></a>
+    <a href="/reviews"><h2>Reviews</h2></a>
+    <a href="/photos"><h2>Photo Gallery</h2></a>
+    <a href="/contact"><h2>Contact</h2></a>
+    <a href="/order"><h2>Order</h2></a>
+        </div>
+    <h1>Celebrations</h1>
+        <div class="row">
+            <div class="column">
+                <img src="{% static 'imgs/9_softball_bday.jpeg' %}" alt="Puzzle Cookies" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="{% static 'imgs/60_Bday.jpeg' %}" alt="Snow" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="{% static 'imgs/60_Bday_2.jpeg' %}" alt="Mountains" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="{% static 'imgs/animal_cookies.jpeg' %}" alt="Lights" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="{% static 'imgs/baby.jpeg' %}" alt="Puzzle Cookies" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="{% static 'imgs/bball16.jpeg' %}" alt="Snow" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="{% static 'imgs/birthday_1.jpeg' %}" alt="Mountains" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="{% static 'imgs/cars_bday.jpeg' %}" alt="Lights" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="{% static 'imgs/chef_bday.jpeg' %}" alt="Lights" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="{% static 'imgs/harry_styles.jpeg' %}" alt="Snow" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="{% static 'imgs/ice_skate.jpeg' %}" alt="Lights" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="{% static 'imgs/pumkin_1.jpeg' %}" alt="Lights" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="{% static 'imgs/purple_prom.jpeg' %}" alt="Mountains" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="{% static 'imgs/scrabble_bday.jpeg' %}" alt="Lights" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="{% static 'imgs/superbowl_2020.jpeg' %}" alt="Lights" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="{% static 'imgs/wedding_1.jpeg' %}" alt="Mountains" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="{% static 'imgs/wedding_2.jpeg' %}" alt="Lights" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="{% static 'imgs/wedding_dress.jpeg' %}" alt="Lights" onclick="myFunction(this);">
+            </div>
+        </div>
+      <div class="container">
+        <!-- Close the image -->
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      
+        <!-- Expanded image -->
+        <img id="expandedImg" style="width:50%">
+      
+        <!-- Image text -->
+        <div id="imgtext"></div>
+        </div>
+        </div>
+        <script>
+            function myFunction(imgs) {
+              // Get the expanded image
+              var expandImg = document.getElementById("expandedImg");
+              // Get the image text
+              var imgText = document.getElementById("imgtext");
+              // Use the same src in the expanded image as the image being clicked on from the grid
+              expandImg.src = imgs.src;
+              // Use the value of the alt attribute of the clickable image as text inside the expanded image
+              expandImg.parentElement.style.display = "block";
+            }
+          </script>
+</body>
+</html>

@@ -1,21 +1,23 @@
 div#wrapper{
     padding: 5px;
-    background-color: #edc7b7;
+    background-color:#797979;
 }
 
-h1{
-    vertical-align: top;
-    text-align: center;
-    color: #ac3b61;
+#logo{
+    margin-left: 36%;
 }
 
 h2{
     display: inline-block;
     width: 10%;
     text-align: center;
-    border: #123C69 2px solid;
+    border: #93c47d 2px solid;
     border-radius: 5px;
-    background-color: #123C69;
+    background-color: #93c47d;
+}
+
+h3{
+    font-size: 35px;
 }
 
 a{
@@ -33,7 +35,7 @@ div#top_left{
     display: inline-block;
     width: 40%;
     padding: 10px;
-    border: 2px solid #123C69;
+    border: 2px solid black;
     margin: 20px;
     text-align: center;
 }

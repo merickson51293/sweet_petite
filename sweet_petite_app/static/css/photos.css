@@ -1,0 +1,102 @@
+* {box-sizing:border-box}
+
+div#wrapper{
+    padding: 5px;
+    background-color: #797979;	
+}
+
+#logo{
+    margin-left: 36%;
+}
+
+h1{
+    text-align: center;
+}
+h2{
+    display: inline-block;
+    width: 10%;
+    text-align: center;
+    border: #93c47d 2px solid;
+    border-radius: 5px;
+    background-color: #93c47d;
+    color:black;
+}
+
+div#celebration{
+    display: inline-block;
+    width: 30%;
+    padding: 10px;
+    margin-left: 5%;
+}
+
+div#grad{
+    display: inline-block;
+    width: 30%;
+    padding: 10px;
+}
+
+div#misc{
+    display: inline-block;
+    width: 30%;
+    padding: 10px;
+}
+
+img#link{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+div#nav{
+    text-align: center;
+    background-color: #bab2b5;
+    border-radius: 10px;
+}
+
+.column {
+    display: inline-block;
+    padding: 6px;
+    width:10%;
+    margin: 5px;
+  }
+  
+  .column img {
+    opacity: 0.8;
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+  }
+  
+  .column img:hover {
+    opacity: 1;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* The expanding image container (positioning is needed to position the close button and the text) */
+  .container {
+    position: relative;
+    display: none;
+  }
+  
+  /* Closable button inside the image */
+  .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  }
+
+  #expandedImg{
+      margin-left: 23%;
+  }
