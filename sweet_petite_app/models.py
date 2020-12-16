@@ -19,6 +19,7 @@ class Review(models.Model):
 
 class Goods(models.Model):
     name=models.CharField(max_length=255)
-    price=models.FloatField()
+    price=models.IntegerField()
+    picture=models.ImageField(upload_to ='imgs/')
     created_at=models.DateTimeField(auto_now_add=True)
     updated_at=models.DateTimeField(auto_now=True)

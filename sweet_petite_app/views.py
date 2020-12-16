@@ -33,4 +33,7 @@ def order(request):
     return render(request, "order.html")
 
 def menu(request):
-    return render(request, "menu.html")
+    context={
+        "goods":Goods.objects.all
+    }
+    return render(request, "menu.html", context)
