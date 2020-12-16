@@ -16,3 +16,9 @@ class Review(models.Model):
     created_at=models.DateTimeField(auto_now_add=True)
     updated_at=models.DateTimeField(auto_now=True)
     objects=ReviewManager()
+
+class Goods(models.Model):
+    name=models.CharField(max_length=255)
+    price=models.FloatField()
+    created_at=models.DateTimeField(auto_now_add=True)
+    updated_at=models.DateTimeField(auto_now=True)

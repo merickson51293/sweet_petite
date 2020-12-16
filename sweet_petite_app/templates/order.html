@@ -6,6 +6,7 @@
     <title>Order Form</title>
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/order.css' %}">
+    <script src="https://js.stripe.com/v3/"></script>
 </head>
 <body>
     <div id="wrapper">
@@ -20,7 +21,8 @@
     <a href="/contact"><h2>Contact</h2></a>
     <a href="/order"><h2 style="background-color:#797979">Order</h2></a>
         </div>
-
-        </div>
+        
+        <button id="checkout-button">Checkout</button>
+    </div>
 </body>
 </html>
