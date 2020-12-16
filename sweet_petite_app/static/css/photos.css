@@ -22,6 +22,10 @@ h2{
     color:black;
 }
 
+h2:hover{
+    background-color: #797979;
+}
+
 div#celebration{
     display: inline-block;
     width: 30%;

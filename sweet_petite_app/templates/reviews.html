@@ -10,15 +10,15 @@
 <body>
     <div id="wrapper">
         <div id="header">
-            <a href="index.html"><img id="logo" src="{% static 'imgs/logo.png' %}" alt="SPD Logo"></a>
+            <a href="/"><img id="logo" src="{% static 'imgs/logo.png' %}" alt="SPD Logo"></a>
         </div>
         <div id="nav">
-    <h2><a href="/">Home</a></h2>
-    <h2><a href="menu.html">Menu</a></h2>
-    <h2><a href="">Reviews</a></h2>
-    <h2><a href="photos.html">Photo Gallery</a></h2>
-    <h2><a href="contact.html">Contact</a></h2>
-    <h2><a href="order.html">Order</a></h2>
+            <a href="/"><h2>Home</h2></a>
+            <a href="/menu"><h2>Menu</h2></a>
+            <a href="/reviews"><h2 style="background-color:#797979">Reviews</h2></a>
+            <a href="/photos"><h2>Photo Gallery</h2></a>
+            <a href="/contact"><h2>Contact</h2></a>
+            <a href="/order"><h2>Order</h2></a>
         </div>
         <div id="top_left">
             <h3>Reviews of Sweet Petite Designs</h3>
@@ -28,10 +28,10 @@
             {% endfor %}
         </div>
         <div id="review_form">
+            <h4>Please Leave a Review</h4></br>
             <form action="/add_review" method="post">
                 {% csrf_token %}
                 Name: <input type="text" name="name" class="center"></br></br>
-                Please Leave a Review</br>
                  <textarea name="review" cols="50" rows="10"></textarea></br>
                 <input type="submit" value="Submit">
             </form>
