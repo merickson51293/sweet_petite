@@ -38,6 +38,15 @@ div#nav{
     border: black 2px solid;
     background-color: #bab2b5;
     margin-top: 20px;
+    margin-bottom: 20px;
     border-radius: 10px;
     padding-left: 10px;
+    padding-right: 10px;
+    display: inline-block;
+    width: 50%;
+    margin-left: 25%;
+}
+
+h3{
+    color:;
 }

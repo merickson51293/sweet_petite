@@ -24,7 +24,7 @@
         {% for good in goods %}
         <p>{{good.name}}</p>
         <p>${{good.price}}.00</p>
-        <img src="{{good.picture.url}}" alt="{{good.name}}" style="width:200px;">
+        <img src="{{good.picture.url}}" alt="{{good.name}}" style="width:200px; height: 200px;">
         {% endfor %}
         <button id="checkout-button">Checkout</button>
     </div>
