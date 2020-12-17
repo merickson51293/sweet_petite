@@ -30,7 +30,10 @@ def contact(request):
     return render(request, "contact.html")
 
 def order(request):
-    return render(request, "order.html")
+    context={
+        "goods":Goods.objects.all
+    }
+    return render(request, "order.html", context)
 
 def menu(request):
     context={

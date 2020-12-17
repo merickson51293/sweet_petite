@@ -21,7 +21,11 @@
     <a href="/contact"><h2>Contact</h2></a>
     <a href="/order"><h2 style="background-color:#797979">Order</h2></a>
         </div>
-        
+        {% for good in goods %}
+        <p>{{good.name}}</p>
+        <p>${{good.price}}.00</p>
+        <img src="{{good.picture.url}}" alt="{{good.name}}" style="width:200px;">
+        {% endfor %}
         <button id="checkout-button">Checkout</button>
     </div>
 </body>

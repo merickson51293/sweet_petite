@@ -33,3 +33,11 @@ div#nav{
     background-color: #bab2b5;
     border-radius: 10px;
 }
+
+#menu{
+    border: black 2px solid;
+    background-color: #bab2b5;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding-left: 10px;
+}

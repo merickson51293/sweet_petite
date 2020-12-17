@@ -20,13 +20,12 @@
     <a href="/contact"><h2>Contact</h2></a>
     <a href="/order"><h2>Order</h2></a>
         </div>
-        {% for good in goods %}
-        <p>{{good.name}}</p>
-        <p>${{good.price}}.00</p>
-        <img src="{{good.picture.url}}" alt="{{good.name}}" style="width:200px;">
-        <!-- <img src="../media/imgs/bball16.jpeg" alt="{{good.name}}" style="width:200px;"> -->
-        {% endfor %}
+            <div id="menu">
+                {% for good in goods %}
+                <h3>{{good.name}}</h3>
+                <p>Price: ${{good.price}}.00</p>
+                {% endfor %}
+            </div>
         </div>
-        
 </body>
 </html>
