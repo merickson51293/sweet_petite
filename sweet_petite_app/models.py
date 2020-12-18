@@ -32,3 +32,10 @@ class Contact(models.Model):
 
     def __str__(self):
         return f"{self.first_name} {self.last_name}"
+
+class Blog(models.Model):
+    title=models.CharField(max_length=255)
+    post=models.TextField()
+    picture=models.ImageField(upload_to='imgs/')
+    created_at=models.DateTimeField(auto_now_add=True)
+    updated_at=models.DateTimeField(auto_now=True)

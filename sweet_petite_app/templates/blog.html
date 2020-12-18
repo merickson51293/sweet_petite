@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sweet Petite Designs</title>
     {% load static %}
-    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     
 </head>
 <body>
@@ -14,22 +14,20 @@
         <a href=""><img id="logo" src="{% static 'imgs/logo.png' %}" alt="SPD Logo"></a>
     </div>
     <div id="nav">
-<a href=""><h2>Home</h2></a>
+<a href="/"><h2>Home</h2></a>
 <a href="/menu"><h2>Menu</h2></a>
 <a href="/reviews"><h2>Reviews</h2></a>
 <a href="/photos"><h2>Photo Gallery</h2></a>
 <a href="/contact"><h2>Contact</h2></a>
-<a href="/blog" style="background-color:#797979"><h2>Blog</h2></a>
+<a href="/blog" ><h2 style="background-color:#797979">Blog</h2></a>
 <a href="/order"><h2>Order</h2></a>
     </div>
     <div id="main">
         <div id="top_left">
-            <h3>Main Info</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad non molestias sit quidem. Nam nisi deleniti voluptatum adipisci minima amet similique, quibusdam nesciunt voluptatem provident in repellendus saepe! Enim, odio!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ducimus saepe eos, quas, aperiam ipsum soluta enim at modi odio, labore iure obcaecati. Voluptates eum, repellendus recusandae officia minus totam!</p>
-        </div>
-        <div id="top_right">
-            <img id="meg" src="{% static 'imgs/jane.jpeg' %}" alt="Megan Erickson - Owner of SPD"/>
+            <h1>Blog Posts</h1>
+            {% for blog in blogs %}
+            <h3>{{blog.title}}</h3>
+            {% endfor %}
         </div>
     </div>
     <div id="footer">
