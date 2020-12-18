@@ -11,5 +11,6 @@ urlpatterns=[
     path('misc', views.misc),
     path('menu', views.menu),
     path('contact', views.contact),
-    path('order', views.order)
+    path('success', views.success),
+    path('order', views.order),
 ]

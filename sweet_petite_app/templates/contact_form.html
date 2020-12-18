@@ -20,7 +20,13 @@
     <a href="/contact"><h2 style="background-color:#797979">Contact</h2></a>
     <a href="/order"><h2>Order</h2></a>
         </div>
-
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <div class="form-actions">
+              <button type="submit">Send</button>
+            </div>
+        </form>
         </div>
 </body>
 </html>
