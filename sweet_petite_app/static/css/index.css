@@ -34,6 +34,25 @@ div#nav{
     border-radius: 10px;
 }
 
+div#main{
+    height: 1200px;
+    background-size: cover;
+}
+
+#welcome{
+    padding-top: 8%;
+    display: inline-block;
+    width: 80%;
+
+    margin-left: 10%;
+}
+
+#welcome > h1{
+    color: white;
+    background-color: black;
+    padding: 2%;
+    border-radius: 10px;
+}
 
 div#best{
     display: inline-block;

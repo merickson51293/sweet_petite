@@ -22,14 +22,18 @@
 <a href="/blog"><h2>Blog</h2></a>
 <a href="/order"><h2>Order</h2></a>
     </div>
-    <div id="main">
+    <div id="main" style="background-image: url({% static 'imgs/Christmas.jpg' %}">
+        <div id="welcome">
+            <h1 style="text-align: center;">Welcome to Sweet Petite Designs. Your one stop shop for any delicious home made baked goods!</h1>
+        </div>
+        </div>
         <div id="best">
             <h1 style="text-align:center; border-bottom:black 2px solid;">Best Sellers</h1>
             {% for good in goods %}
             <img src="{{good.picture.url}}" alt="Pictures">
             {% endfor %}
         </div>
-    </div>
+    
     <div id="footer">
 <p>Connect with us: <a href="https://www.instagram.com/sweetpetite_designs/" target="_blank"><img src="{% static 'imgs/instagram.png' %}" alt='instagram' style="width: 50px; height: 50px;"></a> <a href="https://www.facebook.com/sweetpetitedesigns1/" target="_blank"><img src="{% static 'imgs/facebook.png' %}" alt="facebook" style="width: 50px; height: 50px;"></a></p>
     </div>
