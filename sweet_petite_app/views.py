@@ -8,7 +8,10 @@ from .forms import ContactForm
 
 
 def index(request):
-    return render(request, "index.html")
+    context={
+        'goods':Goods.objects.all()
+    }
+    return render(request, "index.html", context)
 
 def reviews(request):
     context={

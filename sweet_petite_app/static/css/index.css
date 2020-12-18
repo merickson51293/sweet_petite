@@ -34,32 +34,15 @@ div#nav{
     border-radius: 10px;
 }
 
-div.dropdown{
+
+div#best{
     display: inline-block;
+    width: 75%;
+    margin-left: 12%;
 }
 
-div#top_left{
-    display: inline-block;
-    width: 40%;
-    padding: 10px;
-    border: 2px solid black;
-    margin: 20px;
-    background-color: #bab2b5;
-    border-radius: 10px;
-}
-
-div#top_right{
-    display: inline-block;
-    vertical-align: top;
-    margin: 20px;
-    margin-left: 5%;
-    width: 50%;
-
-}
-
-img#meg{
-    width:50%;
-    margin-left:20%;
-    border-radius: 50%;
+#best > img{
+    width: 23%;
+    margin: 10px;
 }
 

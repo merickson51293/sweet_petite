@@ -23,13 +23,11 @@
 <a href="/order"><h2>Order</h2></a>
     </div>
     <div id="main">
-        <div id="top_left">
-            <h3>Main Info</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad non molestias sit quidem. Nam nisi deleniti voluptatum adipisci minima amet similique, quibusdam nesciunt voluptatem provident in repellendus saepe! Enim, odio!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ducimus saepe eos, quas, aperiam ipsum soluta enim at modi odio, labore iure obcaecati. Voluptates eum, repellendus recusandae officia minus totam!</p>
-        </div>
-        <div id="top_right">
-            <img id="meg" src="{% static 'imgs/jane.jpeg' %}" alt="Megan Erickson - Owner of SPD"/>
+        <div id="best">
+            <h1 style="text-align:center; border-bottom:black 2px solid;">Best Sellers</h1>
+            {% for good in goods %}
+            <img src="{{good.picture.url}}" alt="Pictures">
+            {% endfor %}
         </div>
     </div>
     <div id="footer">
