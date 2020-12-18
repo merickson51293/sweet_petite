@@ -52,6 +52,7 @@ div#main{
     background-color: black;
     padding: 2%;
     border-radius: 10px;
+    opacity: 80%;
 }
 
 div#best{

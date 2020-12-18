@@ -57,5 +57,10 @@ div#review_form{
     margin: 20px;
     text-align: center;
     margin-left: 15%;
+    background-color: #bab2b5;
+    border: 2px solid black;
+    padding: 10px;
+    margin-top: 8%;
+    border-radius: 5px;
 }
 

@@ -50,3 +50,17 @@ div#nav{
 h3{
     color:;
 }
+
+#button{
+    text-align: center;
+}
+
+button{
+    font-size: 30px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+button:hover{
+    background-color: #93c47d;
+}
