@@ -22,6 +22,7 @@
     <a href="/blog"><h2>Blog</h2></a>
     <a href="/order"><h2 style="background-color:#797979">Order</h2></a>
         </div>
+        <button id="checkout-button">Checkout</button>
         {% for good in goods %}
         <div id="products">
         <h3>{{good.name}}</h3>
@@ -34,7 +35,6 @@
         </form>
     </div>
         {% endfor %}
-        </br><button id="checkout-button">Checkout</button>
         <div id="footer">
             <p>Connect with us: <a href="https://www.instagram.com/sweetpetite_designs/" target="_blank"><img src="{% static 'imgs/instagram.png' %}" alt='instagram' style="width: 50px; height: 50px;"></a> <a href="https://www.facebook.com/sweetpetitedesigns1/" target="_blank"><img src="{% static 'imgs/facebook.png' %}" alt="facebook" style="width: 50px; height: 50px;"></a></p>
         </div>
