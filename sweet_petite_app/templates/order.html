@@ -22,7 +22,10 @@
     <a href="/blog"><h2>Blog</h2></a>
     <a href="/order"><h2 style="background-color:#797979">Order</h2></a>
         </div>
-        <button id="checkout-button">Checkout</button>
+        <div id="cart">
+            
+            <p>Cart <button id="checkout-button">Checkout</button></p>
+        </div>
         {% for good in goods %}
         <div id="products">
         <h3>{{good.name}}</h3>

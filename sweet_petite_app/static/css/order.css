@@ -50,3 +50,7 @@ div#nav{
 #number{
     width:10%;
 }
+
+#cart{
+    display: block;
+}
