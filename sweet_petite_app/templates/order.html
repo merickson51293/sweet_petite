@@ -27,6 +27,11 @@
         <h3>{{good.name}}</h3>
         <p>${{good.price}}.00 per dozen</p>
         <img src="{{good.picture.url}}" alt="{{good.name}}" style="width:200px; height: 200px;">
+        <form action="" method="post">
+            {% csrf_token %}
+            <input type="number" name="number" id="number">
+            <input type="button" value="Add to Cart">
+        </form>
     </div>
         {% endfor %}
         </br><button id="checkout-button">Checkout</button>
