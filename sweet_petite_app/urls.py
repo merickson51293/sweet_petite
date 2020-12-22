@@ -14,4 +14,6 @@ urlpatterns=[
     path('success', views.success),
     path('order', views.order),
     path('blog', views.blog),
+    # path('purchase', views.purchase),
+    # path('checkout', views.checkout),
 ]

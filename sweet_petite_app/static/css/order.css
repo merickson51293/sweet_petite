@@ -53,4 +53,24 @@ div#nav{
 
 #cart{
     display: block;
+    margin-left: 90%;
+}
+
+#checkout-button{
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#checkout-button:hover{
+    background-color: #93c47d;
+}
+
+#cart_button{
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+#cart_button:hover{
+    background-color: #93c47d;
 }

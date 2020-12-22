@@ -31,10 +31,11 @@
         <h3>{{good.name}}</h3>
         <p>${{good.price}}.00 per dozen</p>
         <img src="{{good.picture.url}}" alt="{{good.name}}" style="width:200px; height: 200px;">
-        <form action="" method="post">
+        <form action="/purchase" method="post">
             {% csrf_token %}
             <input type="number" name="number" id="number">
-            <input type="button" value="Add to Cart">
+            <input type="button" value="Add to Cart" id="cart_button">
+            <input type="hidden" name="price" value="{{good.price}}">
         </form>
     </div>
         {% endfor %}
