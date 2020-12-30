@@ -64,14 +64,15 @@ def contact(request):
             from_email = form.cleaned_data['email']
             message = form.cleaned_data['message']
             try:
-                send_mail(subject, message, from_email, ['sweetpetitedes@gmail.com'])
+                send_mail(name, subject, message, from_email, ['sweetpetitedes@gmail.com'])
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')
             return redirect('/success')
     return render(request, "contact_form.html", {'form': form})
 
 def success(request):
-    return HttpResponse('Success! Thank you for your message.')
+    # return HttpResponse('Success! Thank you for your message.')
+    return render(request, "success.html")
 
 def blog(request):
     context={
