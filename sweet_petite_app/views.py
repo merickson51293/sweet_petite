@@ -71,7 +71,6 @@ def contact(request):
     return render(request, "contact_form.html", {'form': form})
 
 def success(request):
-    # return HttpResponse('Success! Thank you for your message.')
     return render(request, "success.html")
 
 def blog(request):
