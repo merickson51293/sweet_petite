@@ -57,10 +57,21 @@ div#main{
     /* opacity: 80%; */
 }
 
+#aboutme{
+    display: inline-block;
+    width: 45%;
+    text-align: center;
+    vertical-align: top;
+}
+
+#aboutme > img{
+    width: 40%;
+}
+
 div#best{
     display: inline-block;
-    width: 75%;
-    margin-left: 12%;
+    width: 45%;
+
 }
 
 #best > img{

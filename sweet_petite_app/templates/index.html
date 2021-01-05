@@ -27,10 +27,21 @@
             <h1 style="text-align: center;">Welcome to <span style="color:#93c47d"> Sweet Petite Designs</span>. Your one stop shop for any delicious home made baked goods!</h1>
         </div>
         </div>
+        <div id="aboutme">
+            <h1 style="border-bottom: black 2px solid;">My Welcome</h1>
+            <img src="{% static 'imgs/jane.jpeg' %}" alt="Jane">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quas voluptates possimus expedita deserunt, molestiae, architecto rerum consequatur illum enim facere, ab amet eaque dicta sequi maiores nobis delectus accusamus.</p>
+        </div>
         <div id="best">
-            <h1 style="text-align:center; border-bottom:black 2px solid;">Best Sellers</h1>
+            <h1 style="text-align:center; border-bottom:black 2px solid;">Seasonal and Best Sellers</h1>
             {% for good in goods %}
-            <img src="{{good.picture.url}}" alt="Pictures">
+            
+            
+            <h3>{{good.name}}</h3>
+            <img src="{{good.picture}}" alt="Best Seller Picture">
+            <p>{{good.description}}</p>
+            
+
             {% endfor %}
         </div>
     

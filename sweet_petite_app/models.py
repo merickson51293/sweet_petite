@@ -22,6 +22,7 @@ class Goods(models.Model):
     price=models.IntegerField()
     description=models.CharField(max_length=255)
     picture=models.ImageField(upload_to ='imgs/')
+    best_seller=models.BooleanField(default=False)
     created_at=models.DateTimeField(auto_now_add=True)
     updated_at=models.DateTimeField(auto_now=True)
     def __str__(self):
