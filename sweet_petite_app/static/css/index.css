@@ -62,6 +62,7 @@ div#main{
     width: 45%;
     text-align: center;
     vertical-align: top;
+    margin-left: 2%;
 }
 
 #aboutme > img{
@@ -71,11 +72,18 @@ div#main{
 div#best{
     display: inline-block;
     width: 45%;
-
+    margin-left: 5%;
 }
 
-#best > img{
-    width: 23%;
+#goods > img{
+    margin: 10px;
+    width: 75%;
+}
+    
+#goods{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
     margin: 10px;
 }
-

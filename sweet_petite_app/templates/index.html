@@ -14,19 +14,19 @@
         <a href=""><img id="logo" src="{% static 'imgs/logo.png' %}" alt="SPD Logo"></a>
     </div>
     <div id="nav">
-<a href=""><h2 style="background-color:#adcf9d">Home</h2></a>
-<a href="/menu"><h2>Menu</h2></a>
-<a href="/reviews"><h2>Reviews</h2></a>
-<a href="/photos"><h2>Photo Gallery</h2></a>
-<a href="/contact"><h2>Contact</h2></a>
-<a href="/blog"><h2>Blog</h2></a>
-<a href="/order"><h2>Order</h2></a>
+        <a href=""><h2 style="background-color:#adcf9d">Home</h2></a>
+        <a href="/menu"><h2>Menu</h2></a>
+        <a href="/reviews"><h2>Reviews</h2></a>
+        <a href="/photos"><h2>Photo Gallery</h2></a>
+        <a href="/contact"><h2>Contact</h2></a>
+        <a href="/blog"><h2>Blog</h2></a>
+        <a href="/order"><h2>Order</h2></a>
     </div>
     <div id="main" style="background-image: url({% static 'imgs/teacher.jpeg' %}">
         <div id="welcome">
             <h1 style="text-align: center;">Welcome to <span style="color:#93c47d"> Sweet Petite Designs</span>. Your one stop shop for any delicious home made baked goods!</h1>
         </div>
-        </div>
+    </div>
         <div id="aboutme">
             <h1 style="border-bottom: black 2px solid;">My Welcome</h1>
             <img src="{% static 'imgs/jane.jpeg' %}" alt="Jane">
@@ -34,23 +34,24 @@
         </div>
         <div id="best">
             <h1 style="text-align:center; border-bottom:black 2px solid;">Seasonal and Best Sellers</h1>
-            {% for good in goods %}
-            
-            
-            <h3>{{good.name}}</h3>
-            <img src="{{good.picture}}" alt="Best Seller Picture">
-            <p>{{good.description}}</p>
-            
-
-            {% endfor %}
+            <div id="sellers">
+                {% for good in goods %}
+                {% if best_seller == True %}
+                <div id="goods">
+                    <h3>{{good.name}}</h3>
+                    <img src="{{good.picture.url}}" alt="{{good.name}}">
+                    <p>{{good.description}}</p>
+                </div>
+                {% endif %}
+                {% endfor %}
+        
+            </div>
         </div>
-    
     <div id="footer">
-<p>Connect with us: <a href="https://www.instagram.com/sweetpetite_designs/" target="_blank"><img src="{% static 'imgs/instagram.png' %}" alt='instagram' style="width: 50px; height: 50px;"></a> <a href="https://www.facebook.com/sweetpetitedesigns1/" target="_blank"><img src="{% static 'imgs/facebook.png' %}" alt="facebook" style="width: 50px; height: 50px;"></a></p>
+        <p>Connect with us: <a href="https://www.instagram.com/sweetpetite_designs/" target="_blank"><img src="{% static 'imgs/instagram.png' %}" alt='instagram' style="width: 50px; height: 50px;"></a> <a href="https://www.facebook.com/sweetpetitedesigns1/" target="_blank"><img src="{% static 'imgs/facebook.png' %}" alt="facebook" style="width: 50px; height: 50px;"></a></p>
     </div>
 </div>
 <script>
-
 </script>
 </body>
 </html>
