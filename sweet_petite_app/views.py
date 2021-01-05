@@ -61,8 +61,8 @@ def contact(request):
         if form.is_valid():
             name = form.cleaned_data['name']
             subject = form.cleaned_data['subject']
-            from_email = form.cleaned_data['email']
             message = form.cleaned_data['message']
+            from_email = form.cleaned_data['email']
             try:
                 send_mail(name, subject, message, from_email, ['sweetpetitedes@gmail.com'])
             except BadHeaderError:
