@@ -2,7 +2,7 @@
 
 div#wrapper{
     padding: 5px;
-    background-color: #797979;	
+    background-color:white;		
 }
 
 #logo{
@@ -13,14 +13,14 @@ h2{
     display: inline-block;
     width: 10%;
     text-align: center;
-    border: #93c47d 2px solid;
+    border: white 2px solid;
     border-radius: 5px;
-    background-color: #93c47d;
+    background-color: white;
     color:black;
 }
 
 h2:hover{
-    background-color: #797979;
+  background-color: #adcf9d;
 }
 
 a{
@@ -30,8 +30,9 @@ a{
 
 div#nav{
     text-align: center;
-    background-color: #bab2b5;
+    background-color: #93c47d;
     border-radius: 10px;
+    margin-bottom: 10px;
 }
 
 #contact{
