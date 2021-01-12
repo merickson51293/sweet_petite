@@ -38,8 +38,8 @@
                 {% for good in goods %}
                 {% if good.best_seller == True %}
                 <div id="goods">
-                    <h3><a href="/good/{{good.id}}" style="color:black;">{{good.name}}</h3></a>
-                    <img src="{{good.picture.url}}" alt="{{good.name}}">
+                    <h3><a href="/good/{{good.id}}" style="color:black;">{{good.name}}</h3>
+                    <img src="{{good.picture.url}}" alt="{{good.name}}" style="width: 75%;"></a>
                     <p>{{good.description}}</p>
                 </div>
                 {% endif %}

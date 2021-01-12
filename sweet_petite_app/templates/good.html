@@ -5,9 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% load static %}
     <title>{{good.name}}</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="shortcut icon" href="{% static 'imgs/favicon.png' %}">
 </head>
 <body>
+    <div id="header">
+        <a href=""><img id="logo" src="{% static 'imgs/logo.png' %}" alt="SPD Logo"></a>
+    </div>
+    <div id="nav">
+        <a href=""><h2>Home</h2></a>
+        <a href="/menu"><h2>Menu</h2></a>
+        <a href="/reviews"><h2>Reviews</h2></a>
+        <a href="/photos"><h2>Photo Gallery</h2></a>
+        <a href="/contact"><h2>Contact</h2></a>
+        <a href="/blog"><h2>Blog</h2></a>
+        <a href="/order"><h2>Order</h2></a>
+    </div>
+    <div id="one">
     <h1>{{good.name}}</h1>
-    <img src="{{good.picture.url}}" alt="{{good.name}}" style="width: 25%;">
+    <img src="{{good.picture.url}}" alt="{{good.name}}" style="width: 50%;"></br>
+    <h2 style="width: 100%;">Price: {{good.price}}.00 per dozen</h2>
+    <h3>{{good.description}}</h3>
+    <button>Order</button>
+</div>
 </body>
 </html>

@@ -24,7 +24,7 @@
         </div>
             <div id="menu">
                 {% for good in goods %}
-                <h3>{{good.name}}</h3>
+                <h3><a href="/good/{{good.id}}" style="color: black;">{{good.name}}</h3></a>
                 <p>Description: {{good.description}}</p>
                 <p>Price: ${{good.price}}.00/dozen</p>
                 {% endfor %}

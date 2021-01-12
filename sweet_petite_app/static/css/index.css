@@ -87,3 +87,16 @@ div#best{
     vertical-align: top;
     margin: 10px;
 }
+#one{
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+}
+
+#one > button{
+    font-size: 30px;
+}
+
+#one > button:hover{
+    background-color: #93c47d;
+}
