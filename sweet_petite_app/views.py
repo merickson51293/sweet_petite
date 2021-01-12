@@ -103,3 +103,9 @@ def purchase(request):
             return redirect('/checkout')
     else:
         return redirect('/')
+
+def good(request, goods_id):
+    context={
+        "good":Goods.objects.get(id=goods_id)
+    }
+    return render(request, "good.html", context)

@@ -36,9 +36,9 @@
             <h1 style="text-align:center; border-bottom:black 2px solid;">Seasonal and Best Sellers</h1>
             <div id="sellers">
                 {% for good in goods %}
-                {% if best_seller == True %}
+                {% if good.best_seller == True %}
                 <div id="goods">
-                    <h3>{{good.name}}</h3>
+                    <h3><a href="/good/{{good.id}}" style="color:black;">{{good.name}}</h3></a>
                     <img src="{{good.picture.url}}" alt="{{good.name}}">
                     <p>{{good.description}}</p>
                 </div>

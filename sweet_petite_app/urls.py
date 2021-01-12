@@ -14,6 +14,7 @@ urlpatterns=[
     path('success', views.success),
     path('order', views.order),
     path('blog', views.blog),
+    path('good/<int:goods_id>', views.good)
     # path('purchase', views.purchase),
     # path('checkout', views.checkout),
 ]
