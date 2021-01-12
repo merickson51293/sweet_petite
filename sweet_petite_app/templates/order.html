@@ -23,23 +23,27 @@
     <a href="/blog"><h2>Blog</h2></a>
     <a href="/order"><h2 style="background-color:#797979">Order</h2></a>
         </div>
-        <div id="cart">
-            
-            <p>Cart <button id="checkout-button">Checkout</button></p>
+        
+       
+        <div id="order">
+            <h2>Order Form</h2>
+            <form action="mailto:merickson51293@gmail.com" method="post" enctype="text/plain">
+                {% csrf_token %}
+                <p>Full Name: <input type="text" name="name"></p>
+                <p>Email: <input type="email" name="email"></p>
+                <p>Phone Number: <input type="text" name="phone"></p>
+                <h1>What items would you like to order?</h1>
+                {% for good in goods %}
+                <h3><input type="checkbox" name="{{good.name}}" id="good">
+                <label for="good">{{good.name}} - ${{good.price}}/Dozen</label></h3>
+                <label for="{{good.name}}">How many dozen?</label>
+                <input type="number" name="{{good.name}}">
+                <p>Please let us know what design you would like!</p>
+                <textarea name="design" cols="30" rows="3"></textarea>
+                {% endfor %}
+                </br></br><input type="submit" value="Order">
+            </form>
         </div>
-        {% for good in goods %}
-        <div id="products">
-        <h3>{{good.name}}</h3>
-        <p>${{good.price}}.00 per dozen</p>
-        <img src="{{good.picture.url}}" alt="{{good.name}}" style="width:200px; height: 200px;">
-        <form action="/purchase" method="post">
-            {% csrf_token %}
-            <input type="number" name="number" id="number">
-            <input type="button" value="Add to Cart" id="cart_button">
-            <input type="hidden" name="price" value="{{good.price}}">
-        </form>
-    </div>
-        {% endfor %}
         <div id="footer">
             <p>Connect with us: <a href="https://www.instagram.com/sweetpetite_designs/" target="_blank"><img src="{% static 'imgs/instagram.png' %}" alt='instagram' style="width: 50px; height: 50px;"></a> <a href="https://www.facebook.com/sweetpetitedesigns1/" target="_blank"><img src="{% static 'imgs/facebook.png' %}" alt="facebook" style="width: 50px; height: 50px;"></a></p>
         </div>
